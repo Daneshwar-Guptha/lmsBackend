@@ -1,5 +1,5 @@
-const Course = require("../../models/Course");
-const User = require("../../models/signUpSchema"); // Need User model for linking createdCourses
+const Course = require("../../models/Course.js");
+const User = require("../../models/signUpSchema.js"); // Need User model for linking createdCourses
 
 const createCourse = async (req, res) => {
   try {

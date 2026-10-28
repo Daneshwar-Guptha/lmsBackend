@@ -1,4 +1,4 @@
-const Course = require("../../models/Course");
+const Course = require("../../models/Course.js");
 
 // 🟦 Get all courses created by the logged-in instructor
 const getMyCourses = async (req, res) => {

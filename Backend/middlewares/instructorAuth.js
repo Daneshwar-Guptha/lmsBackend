@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const User = require("../models/signUpSchema");
+const User = require("../models/signUpSchema.js");
 require("dotenv").config();
 
 const instructorAuth = async (req, res, next) => {

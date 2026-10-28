@@ -7,9 +7,9 @@ const app = express();
 app.use(express.json());
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
-const authRoutes = require('../Routes/authRoutes');
-const instructorRoutes = require('../Routes/instructorRoutes');
-const userRoutes = require('../Routes/userRoutes');
+const authRoutes = require('../Routes/authRoutes.js');
+const instructorRoutes = require('../Routes/instructorRoutes.js');
+const userRoutes = require('../Routes/userRoutes.js');
 
 app.use(cors({
   origin: "http://localhost:5173",

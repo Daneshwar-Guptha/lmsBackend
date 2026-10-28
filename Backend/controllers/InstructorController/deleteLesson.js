@@ -1,5 +1,5 @@
-const Lesson = require("../../models/Lesson");
-const Course = require("../../models/Course"); // Need Course model
+const Lesson = require("../../models/Lesson.js");
+const Course = require("../../models/Course.js"); // Need Course model
 
 const deleteLesson = async (req, res) => {
   try {

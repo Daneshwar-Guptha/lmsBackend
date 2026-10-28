@@ -2,16 +2,16 @@ const express = require("express");
 const router = express.Router();
 const upload = require("../middlewares/multer");
 
-const {userAuth} = require("../middlewares/userAuth");
-const {getAllCourses} = require("../controllers/userController/getAllCourses");
-const {getCourseDetails} = require("../controllers/userController/getCourseDetails");
-const {enrollCourse} =require("../controllers/userController/enrollCourse");
-const {getMyEnrolledCourses}=require("../controllers/userController/getMyEnrolledCourses");
-const {getCourseLessons}=require("../controllers/userController/getCourseLessons");
-const {getSingleLesson}=require("../controllers/userController/getSingleLesson");
-const {updateUserProfile}=require("../controllers/userController/updateUserProfile");
-const {getStudentProfile } = require("../controllers/userController/getStudentProfile");
-const {uploadStudentProfilePicture} = require("../controllers/userController/profilePick");
+const {userAuth} = require("../middlewares/userAuth.js");
+const {getAllCourses} = require("../controllers/userController/getAllCourses.js");
+const {getCourseDetails} = require("../controllers/userController/getCourseDetails.js");
+const {enrollCourse} =require("../controllers/userController/enrollCourse.js");
+const {getMyEnrolledCourses}=require("../controllers/userController/getMyEnrolledCourses.js");
+const {getCourseLessons}=require("../controllers/userController/getCourseLessons.js");
+const {getSingleLesson}=require("../controllers/userController/getSingleLesson.js");
+const {updateUserProfile}=require("../controllers/userController/updateUserProfile.js");
+const {getStudentProfile } = require("../controllers/userController/getStudentProfile.js");
+const {uploadStudentProfilePicture} = require("../controllers/userController/profilePick.js");
 
 // Public
 router.get("/me",userAuth, getStudentProfile);

@@ -1,6 +1,6 @@
 const bcrypt = require("bcryptjs");
-const User = require("../../models/signUpSchema");
-const cloudinary = require("../../config/cloudinary");
+const User = require("../../models/signUpSchema.js");
+const cloudinary = require("../../config/cloudinary.js");
 const fs = require("fs");
 
 const updateProfile = async (req, res) => {

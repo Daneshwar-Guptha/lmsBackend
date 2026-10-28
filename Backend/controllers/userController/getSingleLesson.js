@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const User = require("../../models/signUpSchema");
-const Lesson = require("../../models/Lesson");
+const User = require("../../models/signUpSchema.js");
+const Lesson = require("../../models/Lesson.js");
 
 const isValidObjectId = (id) => mongoose.Types.ObjectId.isValid(id);
 

@@ -1,4 +1,4 @@
-const User = require("../../models/signUpSchema");
+const User = require("../../models/signUpSchema.js");
 
 const getMyEnrolledCourses = async (req, res) => {
   try {

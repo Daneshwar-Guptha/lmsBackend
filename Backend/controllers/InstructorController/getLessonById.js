@@ -1,5 +1,5 @@
 // controllers/InstructorController/getLessonById.js
-const Lesson = require("../../models/Lesson"); 
+const Lesson = require("../../models/Lesson.js"); 
 
 const getLessonById = async (req, res) => {
   try {

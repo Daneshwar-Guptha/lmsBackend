@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const User = require("../../models/signUpSchema");
-const Course = require("../../models/Course");
-const CourseProgress = require("../../models/progressSchema"); // Assuming you created this model
+const User = require("../../models/signUpSchema.js");
+const Course = require("../../models/Course.js");
+const CourseProgress = require("../../models/progressSchema.js"); // Assuming you created this model
 
 const isValidObjectId = (id) => mongoose.Types.ObjectId.isValid(id);
 

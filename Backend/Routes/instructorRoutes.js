@@ -1,20 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const upload = require("../middlewares/multer");
+const upload = require("../middlewares/multer.js");
 
-const {getInstructorProfile} = require('../controllers/InstructorController/instructorProfile');
-const { instructorAuth } = require('../middlewares/instructorAuth');
-const { createCourse } = require('../controllers/InstructorController/createCourse');
-const { getMyCourses } = require('../controllers/InstructorController/getCourse');
-const { updateCourse } = require('../controllers/InstructorController/updateCourse');
-const { deleteCourse } = require('../controllers/InstructorController/deleteCourse');
+const {getInstructorProfile} = require('../controllers/InstructorController/instructorProfile.js');
+const { instructorAuth } = require('../middlewares/instructorAuth.js');
+const { createCourse } = require('../controllers/InstructorController/createCourse.js');
+const { getMyCourses } = require('../controllers/InstructorController/getCourse.js');
+const { updateCourse } = require('../controllers/InstructorController/updateCourse.js');
+const { deleteCourse } = require('../controllers/InstructorController/deleteCourse.js');
 
-const { addLesson } = require("../controllers/InstructorController/addLesson");
-const { updateLesson } = require("../controllers/InstructorController/updateLesson");
-const { deleteLesson } = require("../controllers/InstructorController/deleteLesson");
-const { getLessons } = require("../controllers/InstructorController/getLessons");
-const {uploadInstructorProfilePicture} = require("../controllers/InstructorController/profilePick");
-const {getLessonById} = require("../controllers/InstructorController/getLessonById");
+const { addLesson } = require("../controllers/InstructorController/addLesson.js");
+const { updateLesson } = require("../controllers/InstructorController/updateLesson.js");
+const { deleteLesson } = require("../controllers/InstructorController/deleteLesson.js");
+const { getLessons } = require("../controllers/InstructorController/getLessons.js");
+const {uploadInstructorProfilePicture} = require("../controllers/InstructorController/profilePick.js");
+const {getLessonById} = require("../controllers/InstructorController/getLessonById.js");
 
 // GET Instructor Dashboard Profile
 router.get("/me", instructorAuth, getInstructorProfile);

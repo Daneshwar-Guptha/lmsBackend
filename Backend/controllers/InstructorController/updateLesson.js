@@ -1,6 +1,6 @@
-const Lesson = require("../../models/Lesson");
-const Course = require("../../models/Course");
-const cloudinary = require("../../config/cloudinary");
+const Lesson = require("../../models/Lesson.js");
+const Course = require("../../models/Course.js");
+const cloudinary = require("../../config/cloudinary.js");
 
 const updateLesson = async (req, res) => {
   try {

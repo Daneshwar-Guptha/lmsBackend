@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const Course = require("../../models/Course");
-const Review = require('../../models/reviewSchema');
+const Course = require("../../models/Course.js");
+const Review = require('../../models/reviewSchema.js');
 
 const getCourseDetails = async (req, res) => {
   try {

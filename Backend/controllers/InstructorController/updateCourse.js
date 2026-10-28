@@ -1,4 +1,4 @@
-const Course = require("../../models/Course");
+const Course = require("../../models/Course.js");
 
 // 🟩 Update Course (Only Course Owner Can Update)
 const updateCourse = async (req, res) => {

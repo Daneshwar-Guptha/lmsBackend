@@ -1,7 +1,7 @@
-const Course = require("../../models/Course");
-const Lesson = require("../../models/Lesson");      // Need Lesson model
-const User = require("../../models/signUpSchema"); // Need User model
-const CourseProgress = require("../../models/progressSchema"); // Assuming you created this model
+const Course = require("../../models/Course.js");
+const Lesson = require("../../models/Lesson.js");      // Need Lesson model
+const User = require("../../models/signUpSchema.js"); // Need User model
+const CourseProgress = require("../../models/progressSchema.js"); // Assuming you created this model
 
 const deleteCourse = async (req, res) => {
   try {

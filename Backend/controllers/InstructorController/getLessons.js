@@ -1,4 +1,4 @@
-const Lesson = require("../../models/Lesson");
+const Lesson = require("../../models/Lesson.js");
 
 const getLessons = async (req, res) => {
   try {
